@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your ToyBop Account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Same document style as the privacy policy: one reading column, numbered steps, both languages in full. */
+  :root {
+    --paper: #f6f7fb;
+    --sheet: #ffffff;
+    --ink: #1d2440;
+    --muted: #5a6280;
+    --line: #dfe3ee;
+    --accent: #2f6fe4;
+    --accent-soft: #e7efff;
+    --warn-soft: #ffe9e6;
+    --font-display: "Fredoka", "IBM Plex Sans Thai", system-ui, sans-serif;
+    --font-body: "IBM Plex Sans Thai", "Segoe UI", system-ui, sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #12152a;
+      --sheet: #1a1f38;
+      --ink: #e8ebf7;
+      --muted: #a4abc6;
+      --line: #2e3555;
+      --accent: #7fa8ff;
+      --accent-soft: #24305a;
+      --warn-soft: #4a2622;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12152a;
+    --sheet: #1a1f38;
+    --ink: #e8ebf7;
+    --muted: #a4abc6;
+    --line: #2e3555;
+    --accent: #7fa8ff;
+    --accent-soft: #24305a;
+    --warn-soft: #4a2622;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .page { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; display: grid; gap: 24px; }
+  header.top { display: grid; gap: 8px; }
+  .brand {
+    font-family: var(--font-display); font-weight: 600; font-size: 15px;
+    letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;
+  }
+  h1 {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: clamp(30px, 6vw, 40px); line-height: 1.15; margin: 0; text-wrap: balance;
+  }
+  .meta { color: var(--muted); margin: 0; font-size: 15px; }
+  nav.langs { display: flex; flex-wrap: wrap; gap: 8px; }
+  nav.langs a {
+    display: inline-block; padding: 6px 14px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent); font-weight: 600;
+    text-decoration: none; font-size: 14px;
+  }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  article {
+    background: var(--sheet); border: 1px solid var(--line); border-radius: 16px;
+    padding: 28px 24px; display: grid; gap: 4px;
+  }
+  article > h2 { font-family: var(--font-display); font-weight: 600; font-size: 26px; margin: 0 0 8px; }
+  h3 { font-family: var(--font-display); font-weight: 600; font-size: 19px; margin: 24px 0 4px; text-wrap: balance; }
+  p, ul, ol { margin: 0 0 12px; max-width: 65ch; }
+  ul, ol { padding-left: 22px; }
+  li + li { margin-top: 6px; }
+  a { color: var(--accent); }
+  .option {
+    border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 8px 0;
+    display: grid; gap: 4px;
+  }
+  .option h3 { margin-top: 0; }
+  .tag {
+    justify-self: start; font-size: 13px; font-weight: 600; color: var(--accent);
+    background: var(--accent-soft); border-radius: 999px; padding: 2px 10px;
+  }
+  .email {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+    background: var(--accent-soft); border-radius: 10px; padding: 10px 14px; margin: 4px 0 12px;
+  }
+  .email code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 15px; word-break: break-all; }
+  .email button {
+    font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+    border: 0; border-radius: 999px; padding: 4px 14px;
+    background: var(--accent); color: var(--sheet);
+  }
+  .note { background: var(--warn-soft); border-radius: 12px; padding: 14px 18px; margin: 8px 0; }
+  .note p { margin: 0; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; }
+  @media (max-width: 420px) { article { padding: 22px 16px; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <div class="brand">ToyBop · aubStudio</div>
+    <h1>Delete your ToyBop account</h1>
+    <p class="meta">ลบบัญชี ToyBop</p>
+    <nav class="langs" aria-label="Language">
+      <a href="#english">English</a>
+      <a href="#thai">ภาษาไทย</a>
+    </nav>
+  </header>
+
+  <article id="english" lang="en">
+    <h2>English</h2>
+    <p>This page explains how to delete your account and data for <strong>ToyBop</strong>, a game by aubStudio.</p>
+
+    <div class="option">
+      <span class="tag">Fastest</span>
+      <h3>If the Game is still installed</h3>
+      <ol>
+        <li>Open ToyBop and tap the <strong>Menu</strong> button.</li>
+        <li>Tap <strong>Delete account</strong> at the bottom of the menu.</li>
+        <li>Tap <strong>Delete</strong> to confirm.</li>
+      </ol>
+      <p>Your data is deleted immediately and the Game starts over as a new player.</p>
+    </div>
+
+    <div class="option">
+      <span class="tag">After uninstalling</span>
+      <h3>If you no longer have the Game</h3>
+      <p>Email us from any address:</p>
+      <div class="email">
+        <code id="email-en">aub.indiegame@gmail.com</code>
+        <button type="button" id="copy-en" data-copy="aub.indiegame@gmail.com">Copy</button>
+      </div>
+      <ul>
+        <li>Subject: <strong>Delete my ToyBop data</strong></li>
+        <li>Include the Google account you linked in the Game (Google Play Games or Google), or your Apple ID if you used Sign in with Apple, so we can find your data.</li>
+      </ul>
+      <p>We delete your data within 30 days and reply to confirm.</p>
+    </div>
+
+    <h3>What is deleted</h3>
+    <ul>
+      <li>Your player ID</li>
+      <li>Your cloud save: level, coins, boosters and purchase flags</li>
+      <li>The links to your Google Play Games, Google or Apple sign-in</li>
+    </ul>
+
+    <h3>What is kept</h3>
+    <ul>
+      <li>Purchase records held by Google Play or the App Store, which they keep under their own policies and the law. Your purchases stay with your store account, so Remove Ads can be restored with Restore Purchases if you play again.</li>
+      <li>Ad networks keep advertising data under their own policies. You can reset your Advertising ID in your phone’s settings.</li>
+    </ul>
+
+    <div class="note">
+      <p>If you never linked an account and have already uninstalled the Game, we cannot tell which data is yours. That data is not connected to your name or email, and it is deleted automatically after 24 months without play.</p>
+    </div>
+
+    <p>See the <a href="privacy-policy.html">Privacy Policy</a> for full details.</p>
+  </article>
+
+  <article id="thai" lang="th">
+    <h2>ภาษาไทย</h2>
+    <p>หน้านี้อธิบายวิธีลบบัญชีและข้อมูลของ <strong>ToyBop</strong> เกมของ aubStudio</p>
+
+    <div class="option">
+      <span class="tag">เร็วที่สุด</span>
+      <h3>ถ้ายังมีเกมอยู่ในเครื่อง</h3>
+      <ol>
+        <li>เปิด ToyBop แล้วแตะปุ่ม <strong>เมนู</strong></li>
+        <li>แตะ <strong>ลบบัญชี</strong> ด้านล่างของเมนู</li>
+        <li>แตะ <strong>ลบ</strong> เพื่อยืนยัน</li>
+      </ol>
+      <p>ข้อมูลจะถูกลบทันที แล้วเกมจะเริ่มใหม่เป็นผู้เล่นใหม่</p>
+    </div>
+
+    <div class="option">
+      <span class="tag">ลบเกมไปแล้ว</span>
+      <h3>ถ้าไม่มีเกมในเครื่องแล้ว</h3>
+      <p>ส่งอีเมลมาหาเราจากอีเมลไหนก็ได้</p>
+      <div class="email">
+        <code id="email-th">aub.indiegame@gmail.com</code>
+        <button type="button" id="copy-th" data-copy="aub.indiegame@gmail.com">คัดลอก</button>
+      </div>
+      <ul>
+        <li>หัวเรื่อง: <strong>Delete my ToyBop data</strong></li>
+        <li>แจ้งบัญชี Google ที่เคยผูกไว้ในเกม (Google Play Games หรือ Google) หรือ Apple ID ถ้าเคยใช้ Sign in with Apple เพื่อให้เราหาข้อมูลของคุณเจอ</li>
+      </ul>
+      <p>เราจะลบข้อมูลภายใน 30 วัน และตอบกลับเพื่อยืนยัน</p>
+    </div>
+
+    <h3>ข้อมูลที่ถูกลบ</h3>
+    <ul>
+      <li>รหัสผู้เล่น</li>
+      <li>ข้อมูลเซฟบนคลาวด์: ด่าน เหรียญ ตัวช่วย และสถานะการซื้อ</li>
+      <li>การผูกกับ Google Play Games, Google หรือ Apple</li>
+    </ul>
+
+    <h3>ข้อมูลที่ยังเก็บไว้</h3>
+    <ul>
+      <li>ข้อมูลการซื้อที่ Google Play หรือ App Store เก็บไว้ตามนโยบายของเขาและตามกฎหมาย ของที่ซื้อผูกกับบัญชี store ของคุณ ถ้ากลับมาเล่นใหม่ กู้คืน Remove Ads ได้ด้วยปุ่มกู้คืนการซื้อ</li>
+      <li>เครือข่ายโฆษณาเก็บข้อมูลโฆษณาตามนโยบายของแต่ละราย คุณรีเซ็ตรหัสโฆษณาได้ในการตั้งค่าของมือถือ</li>
+    </ul>
+
+    <div class="note">
+      <p>ถ้าคุณไม่เคยผูกบัญชีใด ๆ และลบเกมไปแล้ว เราจะไม่สามารถรู้ได้ว่าข้อมูลไหนเป็นของคุณ ข้อมูลนั้นไม่ได้ผูกกับชื่อหรืออีเมลของคุณ และจะถูกลบอัตโนมัติเมื่อไม่มีการเล่นครบ 24 เดือน</p>
+    </div>
+
+    <p>อ่านรายละเอียดทั้งหมดได้ที่ <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a></p>
+  </article>
+
+  <footer>© 2026 aubStudio · ToyBop</footer>
+</div>
+<script>
+  document.querySelectorAll("button[data-copy]").forEach(function (button) {
+    var label = button.textContent;
+    button.addEventListener("click", function () {
+      var done = function (ok) {
+        button.textContent = ok ? (button.id === "copy-th" ? "คัดลอกแล้ว" : "Copied") : label;
+        setTimeout(function () { button.textContent = label; }, 1500);
+      };
+      try {
+        navigator.clipboard.writeText(button.dataset.copy).then(function () { done(true); }, function () { done(false); });
+      } catch (e) {
+        done(false);
+      }
+    });
+  });
+</script>
+</body>
+</html>
